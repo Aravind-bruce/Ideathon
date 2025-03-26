@@ -66,3 +66,9 @@ def problem(request):
         obj.save()
         return redirect('/home')
     return render(request,'problem_selection.html')
+
+from django.http import HttpResponse
+from django.shortcuts import render
+
+def home(request):
+    return HttpResponse("<h1>Welcome to Ideathon!</h1><p>This is the homepage.</p>")
