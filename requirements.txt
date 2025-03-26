@@ -1,0 +1,6 @@
+Django==4.2.7               # Django framework
+gunicorn==21.2.0            # WSGI server for production deployment
+psycopg2-binary==2.9.9      # PostgreSQL support (if using PostgreSQL)
+dj-database-url==2.1.0      # For database connection management
+whitenoise==6.5.0           # Serve static files in production
+python-decouple==3.8         # Manage environment variables
