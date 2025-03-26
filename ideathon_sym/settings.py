@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ceh4m*2$qtwo!837jkmr_v6_o)45-xk8yp^@=iok73qb_0(v^_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ideathon-3ade.onrender.com']
+ALLOWED_HOSTS = ['*'] 
 
 
 # Application definition
@@ -122,6 +122,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+
+import os
+
+# Static files settings
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
