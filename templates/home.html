@@ -20,7 +20,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
         }
 
@@ -29,7 +29,7 @@
             background: linear-gradient(135deg, #5a189a, #4361ee);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             padding: 10px 20px;
-            height: 70px;  /* Maintain the original navbar height */
+            height: 70px;
         }
 
         .navbar-brand {
@@ -48,7 +48,6 @@
         .logo {
             width: 150px;
             height: 60px;
-            
             margin-right: 8px;
         }
 
@@ -98,7 +97,7 @@
 
         .w1 {
             width: 400px;
-            height: 400px;
+            height: 250px;
             background-color: rgba(239, 235, 235, 0.5);
             border-radius: 15px;
             animation: slideLeft 1s ease-in-out;
@@ -166,71 +165,76 @@
             }
         }
 
+        /* Mobile Responsiveness */
         @media (max-width: 992px) {
             .box-container {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                padding: 50px 15px;
             }
 
-            .w1, .ideation {
-                width: 100%;
+            .w1 {
+                width: 90%;
                 max-width: 400px;
+                height: auto;
                 margin-bottom: 30px;
-                margin-right: 200px;
+                padding: 25px;
             }
 
             .ideation {
                 font-size: 45px;
-               
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .navbar {
+                height: auto;
+                padding: 15px;
+            }
+
+            .navbar-toggler {
+                margin: 10px;
+            }
+
+            .ai-ds-section {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .button-76 {
+                width: 150px;
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/problem">Problem Confirmation</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
-<!-- AI & Data Science Section -->
+
+<!-- AI & Data Science Section --> <br>
 <div class="ai-ds-section">
     Artificial Intelligence & Data Science <br> <h6>Proudly Presents</h6>
 </div>
 
-<!-- Box and Ideation Side-by-Side -->
+<!-- Box and Ideation Section --> <br><br><br>
 <div class="box-container">
     
     <!-- Box -->
     <div class="w1">
         <div class="banner-content">
-            <br><br>
             𝙄𝙣𝙣𝙤𝙫𝙖𝙩𝙞𝙤𝙣 𝙠𝙣𝙤𝙬𝙨 𝙣𝙤 𝙗𝙤𝙪𝙣𝙙𝙖𝙧𝙞𝙚𝙨. 𝙒𝙝𝙚𝙣 𝙘𝙧𝙚𝙖𝙩𝙞𝙫𝙞𝙩𝙮 𝙢𝙚𝙚𝙩𝙨 𝙙𝙚𝙩𝙚𝙧𝙢𝙞𝙣𝙖𝙩𝙞𝙤𝙣, 𝙞𝙙𝙚𝙖𝙨 𝙝𝙖𝙫𝙚 𝙩𝙝𝙚 𝙥𝙤𝙬𝙚𝙧 𝙩𝙤 𝙧𝙚𝙨𝙝𝙖𝙥𝙚 𝙩𝙝𝙚 𝙛𝙪𝙩𝙪𝙧𝙚!
-            <br><br><br>
+            <br><br>
             <a href="/domain">
-                <button class="button-76" role="button">Get Start <img width="20" height="20" src="https://img.icons8.com/forma-light-filled/24/FFFFFF/long-arrow-right.png" alt="long-arrow-right"/></button>
+                <button class="button-76">Get Start 🚀</button>
             </a>
         </div>
     </div>
 
     <!-- Ideation -->
     <div class="ideation">
-        Ideathon 💡 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        Ideathon 💡
     </div>
 
 </div>
