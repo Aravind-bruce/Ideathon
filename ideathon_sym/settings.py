@@ -27,10 +27,10 @@ DEBUG = True
 
 # settings.py
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ideathon-production.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ideathon-production.up.railway.app','ideathon-3ade.onrender.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://ideathon-production.up.railway.app'
+    'https://ideathon-production.up.railway.app','https://ideathon-3ade.onrender.com'
 ]
  
 
