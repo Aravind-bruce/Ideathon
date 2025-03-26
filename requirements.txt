@@ -1,4 +1,4 @@
 Django
-Bootstarp
-Python
-JavaScript
+Bootstrap
+Python==3.10
+
