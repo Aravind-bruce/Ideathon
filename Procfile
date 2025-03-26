@@ -1,1 +1,1 @@
-web: gunicorn myapp.wsgi
+web: gunicorn ideathon_sym.wsgi:application

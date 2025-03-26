@@ -20,7 +20,8 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 600px;
+            height: 100vh;
+            margin: 0;
         }
 
         /* Navbar Styling */
@@ -28,6 +29,7 @@
             background: linear-gradient(135deg, #5a189a, #4361ee);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             padding: 10px 20px;
+            height: 70px;  /* Maintain the original navbar height */
         }
 
         .navbar-brand {
@@ -44,9 +46,9 @@
 
         /* Logo Styling */
         .logo {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+            width: 150px;
+            height: 60px;
+            
             margin-right: 8px;
         }
 
@@ -74,84 +76,53 @@
             font-size: 1.2rem;
         }
 
-        @media (max-width: 992px) {
-            .navbar-nav {
-                text-align: center;
-            }
-
-            .navbar-nav .nav-link {
-                padding: 8px;
-            }
-        }
-        .navbar {
-            background-color: #343a40;
-        }
-
-        .navbar .navbar-brand img {
-            width: 50px;
-        }
-
-        .banner {
-            background-image: url('https://via.placeholder.com/1500x500');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
+        /* AI & Data Science Section */
+        .ai-ds-section {
             text-align: center;
-        }
-
-        .banner h1 {
-            font-size: 50px;
+            padding: 15px;
+            background: linear-gradient(135deg, #4a90e2, #a4508b);
+            color: #fff;
+            font-size: 22px;
             font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
-        .card-deck .card {
-            border: none;
+        /* Box Section */
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 50px;
         }
 
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        .footer i {
-            margin: 0 10px;
-            font-size: 1.5rem;
-        }
-
-        .c1{
-            height: 180px;
-        }
-        .c2{
-            height: 110px;
-        }
-        .w1{
-            margin-left: 50px;
-            margin-top: 100px;
+        .w1 {
             width: 400px;
             height: 400px;
             background-color: rgba(239, 235, 235, 0.5);
             border-radius: 15px;
-            animation: slideLeft 1s ease-in-out ;
+            animation: slideLeft 1s ease-in-out;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            padding: 30px;
         }
-        @keyframes slideLeft {
-            0% {
-              transform: translateX(15%);
-            }
-        }
-        .font_height{
+
+        .banner-content {
             font-size: 20px;
+            color: #fff;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
-        .get_start{
-            background-color: #343a40;
+
+        /* Ideation on the Right Side */
+        .ideation {
+            font-size: 65px;
+            font-weight: bold;
+            color: #f8c537;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: slideRight 1s ease-in-out;
         }
-        .get_start{
-            margin-left: 100px;
-            font-size: 25px;
-        }
-        
+
+        /* Button Styling */
         .button-76 {
             background-color: #ea0656;
             background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
@@ -159,29 +130,59 @@
             height: 45px;
             width: 180px;
             border-radius: .25rem;
-            box-sizing: border-box;
             color: #fff;
             cursor: pointer;
-            font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             font-size: 1.125rem; /* 18px */
             font-weight: 600;
             line-height: 1.75rem; /* 28px */
-            padding: 1rem 1.25rem;
             text-align: center;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
+            transition: 0.3s;
         }
 
         .button-76:hover {
-            box-shadow: none;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
-        @media (min-width: 1024px) {
-            .button-76 {
-                font-size: 1.5rem; /* 24px */
-                padding: 1rem 1.5rem;
-                line-height: 2rem; /* 32px */
+        /* Animations */
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .box-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .w1, .ideation {
+                width: 100%;
+                max-width: 400px;
+                margin-bottom: 30px;
+                margin-right: 200px;
+            }
+
+            .ideation {
+                font-size: 45px;
+               
             }
         }
     </style>
@@ -192,8 +193,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="" alt="Logo" class="logo">
-            <span>CIET</span>
+            
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars navbar-toggler-icon"></i>
@@ -203,25 +203,37 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/problem">Problem Confirmation</a>
                 </li>
-                
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Banner Section -->
-<div class="container-fluid">
-    <div class="row w1 animated fadeInLeft">
-        <div class="col">
-            <div class="banner-content font_height text-center"><br><br>
-                𝙄𝙣𝙣𝙤𝙫𝙖𝙩𝙞𝙤𝙣 𝙠𝙣𝙤𝙬𝙨 𝙣𝙤 𝙗𝙤𝙪𝙣𝙙𝙖𝙧𝙞𝙚𝙨. 𝙒𝙝𝙚𝙣 𝙘𝙧𝙚𝙖𝙩𝙞𝙫𝙞𝙩𝙮 𝙢𝙚𝙚𝙩𝙨 𝙙𝙚𝙩𝙚𝙧𝙢𝙞𝙣𝙖𝙩𝙞𝙤𝙣, 𝙞𝙙𝙚𝙖𝙨 𝙝𝙖𝙫𝙚 𝙩𝙝𝙚 𝙥𝙤𝙬𝙚𝙧 𝙩𝙤 𝙧𝙚𝙨𝙝𝙖𝙥𝙚 𝙩𝙝𝙚 𝙛𝙪𝙩𝙪𝙧𝙚. 𝙇𝙚𝙩 𝙮𝙤𝙪𝙧 𝙞𝙢𝙖𝙜𝙞𝙣𝙖𝙩𝙞𝙤𝙣 𝙨𝙤𝙖𝙧 𝙖𝙣𝙙 𝙩𝙪𝙧𝙣 𝙗𝙤𝙡𝙙 𝙫𝙞𝙨𝙞𝙤𝙣𝙨 𝙞𝙣𝙩𝙤 𝙧𝙚𝙖𝙡𝙞𝙩𝙮!
-                {% csrf_token %}
-                <br><br><br><a href="/domain"><button class="button-76" role="button" id="getStartedBtn"><h6>Get Start <img width="20" height="20" src="https://img.icons8.com/forma-light-filled/24/FFFFFF/long-arrow-right.png" alt="long-arrow-right"/></h6></button></a>
-            </div>
-        </div>
-    </div>
+<!-- AI & Data Science Section -->
+<div class="ai-ds-section">
+    Artificial Intelligence & Data Science <br> <h6>Proudly Presents</h6>
 </div>
 
+<!-- Box and Ideation Side-by-Side -->
+<div class="box-container">
+    
+    <!-- Box -->
+    <div class="w1">
+        <div class="banner-content">
+            <br><br>
+            𝙄𝙣𝙣𝙤𝙫𝙖𝙩𝙞𝙤𝙣 𝙠𝙣𝙤𝙬𝙨 𝙣𝙤 𝙗𝙤𝙪𝙣𝙙𝙖𝙧𝙞𝙚𝙨. 𝙒𝙝𝙚𝙣 𝙘𝙧𝙚𝙖𝙩𝙞𝙫𝙞𝙩𝙮 𝙢𝙚𝙚𝙩𝙨 𝙙𝙚𝙩𝙚𝙧𝙢𝙞𝙣𝙖𝙩𝙞𝙤𝙣, 𝙞𝙙𝙚𝙖𝙨 𝙝𝙖𝙫𝙚 𝙩𝙝𝙚 𝙥𝙤𝙬𝙚𝙧 𝙩𝙤 𝙧𝙚𝙨𝙝𝙖𝙥𝙚 𝙩𝙝𝙚 𝙛𝙪𝙩𝙪𝙧𝙚!
+            <br><br><br>
+            <a href="/domain">
+                <button class="button-76" role="button">Get Start <img width="20" height="20" src="https://img.icons8.com/forma-light-filled/24/FFFFFF/long-arrow-right.png" alt="long-arrow-right"/></button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Ideation -->
+    <div class="ideation">
+        Ideathon 💡 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
