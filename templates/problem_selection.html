@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Selection Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background with mixed pink gradient */
+        body {
+            background-image: url('../static/images/symp2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scroll during animation */
+        }
+
+        /* Card container with shadow and animation */
+        .form-container {
+            width: 90%;
+            max-width: 600px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            animation: slide-in 1s ease-out;
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        /* Slide-in animation */
+        @keyframes slide-in {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Stylish form labels */
+        label {
+            font-weight: bold;
+            color: #444;
+        }
+
+        /* Styled input boxes */
+        .form-control {
+            border: 2px solid #ff9a9e;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #ff77a9;
+            box-shadow: 0 0 10px #ff77a9;
+        }
+
+        /* Submit button styling */
+        .btn-custom {
+            background: linear-gradient(135deg, #ff77a9, #ff4d94);
+            color: white;
+            transition: 0.3s;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background: #ff0055;
+            transform: scale(1.05);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Form Container -->
+<div class="form-container">
+    <h2 class="text-center mb-4">Problem Selection Form</h2>
+    <form method="POST" >
+        {% csrf_token %}
+
+        <!-- Team Name -->
+        <div class="mb-3">
+            <label for="team_name" class="form-label">Team Name</label>
+            <input type="text" class="form-control" id="team_name" name="team_name" placeholder="Enter your team name" required>
+        </div>
+
+        <!-- Problem Domain -->
+        <div class="mb-3">
+            <label for="problem_domain" class="form-label">Problem Domain</label>
+            <select name="problem_domain" class="form-select">
+                <option value="" disabled selected>Select your Domain</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Data Privacy">Data Privacy</option>
+                <option value="Resource Optimization">Resource Optimization</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Space">Space Tech</option>
+                <option value="Disaster Control">Disaster Control</option>
+                <option value="Education">Education</option>
+            </select>
+        </div>
+
+        <!-- Problem Statement Number -->
+        <div class="mb-3">
+            <label for="problem_statement_number" class="form-label">Problem Statement Number</label>
+            <select name="problem_statement_number" class="form-select">
+                <option value="" disabled selected>Select your Statement Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-custom w-100">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Trigger slide-in animation after the page loads
+    window.addEventListener('load', () => {
+        document.querySelector('.form-container').style.animation = 'slide-in 1s ease-out forwards';
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

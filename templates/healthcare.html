@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Domain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Overall Page Styling */
+        body {
+            background: linear-gradient(135deg, #f06, #3cf);  /* Background gradient */
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 40px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Full-Width Card Box */
+        .card {
+            width: 90%;               /* Card spans 90% of the width */
+            margin: 0 auto 30px;       /* Center the card and add bottom margin */
+            border-radius: 15px;       /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+            padding: 40px;             /* Padding on all four sides */
+            color: #333;               /* Text color inside the card */
+            font-size: 28px;           /* Reduced font size */
+            font-weight: 500;          /* Medium font weight */
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Gradient Colors for Each Card */
+        .card:nth-child(1) { background: linear-gradient(135deg, #8E2DE2, #4A00E0); }   /* Pink to Orange */
+        .card:nth-child(2) { background: linear-gradient(135deg, #56CCF2, #2F80ED); }   /* Sky Blue to Deep Blue */
+        .card:nth-child(3) { background: linear-gradient(135deg, #11998e, #38ef7d); }   /* Teal to Bright Green */
+        .card:nth-child(4) { background: linear-gradient(135deg, #8E2DE2, #4A00E0); }   /* Pink to Orange */
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .card {
+                font-size: 24px;    /* Smaller font size */
+                padding: 30px;      /* Less padding */
+            }
+            h1 {
+                font-size: 40px;    /* Smaller title */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                font-size: 20px;
+                padding: 25px;
+            }
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                font-size: 18px;    /* Even smaller font size */
+                padding: 20px;      /* Reduced padding */
+            }
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Title -->
+<h1>Health Care</h1>
+
+<!-- Full-width Card Boxes with Padding -->
+<div class="card">Problem Statement 1: <br>How can we create a technology-driven solution that effectively supports patients in
+    managing their medication regimens, ensuring timely, accurate, and consistent medication
+    intake while providing healthcare providers with real-time insights into patient adherence and
+    health status? The solution should be intuitive, secure, and accessible, addressing barriers
+    such as forgetfulness, complex medication schedules, and lack of communication between
+    patients and providers.</div>
+<div class="card">Problem Statement 2: <br>With organ shortages and long transplant waiting times posing life-threatening challenges,
+    how can we leverage advanced biomaterial engineering and real-time fabrication techniques to
+    create highly precise, patient-specific cardiac solutions that bridge the gap between critical
+    waiting periods and long-term organ viability—transforming the future of heart
+    transplantation?</div>
+<div class="card">Problem Statement 3: <br>How can we develop an innovative solution that enables individuals with limb loss to regain
+    more natural, intuitive, and precise control over prosthetic limbs, leveraging advanced
+    technology to bridge the gap between human intent and prosthetic movement, while ensuring
+    comfort, real-time responsiveness, and long-term usability?</div>
+<div class="card">Problem Statement 4: <br>In sports, injury prevention and recovery are critical to maintaining player performance
+    and extending careers. However, current injury monitoring systems often fail to provide real-
+    time insights into player health, leading to delayed responses and increased risk of severe
+    injuries. How can we develop real-time monitoring systems to track player health, detect
+    potential injuries early, and enable faster, more effective recovery to ensure optimal
+    performance and safety?</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

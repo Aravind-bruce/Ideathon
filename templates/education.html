@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Domain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Overall Page Styling */
+        body {
+            background: linear-gradient(135deg, #f06, #3cf);  /* Background gradient */
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 40px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Full-Width Card Box */
+        .card {
+            width: 90%;               /* Card spans 90% of the width */
+            margin: 0 auto 30px;       /* Center the card and add bottom margin */
+            border-radius: 15px;       /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+            padding: 40px;             /* Padding on all four sides */
+            color: #333;               /* Text color inside the card */
+            font-size: 28px;           /* Reduced font size */
+            font-weight: 500;          /* Medium font weight */
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Gradient Colors for Each Card */
+        .card:nth-child(1) { background: linear-gradient(135deg, #8E2DE2, #4A00E0); }   /* Pink to Orange */
+        .card:nth-child(2) { background: linear-gradient(135deg, #56CCF2, #2F80ED); }   /* Sky Blue to Deep Blue */
+        .card:nth-child(3) { background: linear-gradient(135deg, #11998e, #38ef7d); }   /* Teal to Bright Green */
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .card {
+                font-size: 24px;    /* Smaller font size */
+                padding: 30px;      /* Less padding */
+            }
+            h1 {
+                font-size: 40px;    /* Smaller title */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                font-size: 20px;
+                padding: 25px;
+            }
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                font-size: 18px;    /* Even smaller font size */
+                padding: 20px;      /* Reduced padding */
+            }
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Title -->
+<h1>Education</h1>
+
+<!-- Full-width Card Boxes with Padding -->
+<div class="card">Problem Statement 1: <br>In a world where experimental accuracy, safety, and accessibility are paramount, how can
+    we develop an intelligent, real-time platform that mirrors intricate scientific processes,
+    enabling seamless experimentation, predictive analysis, and iterative learning—without the
+    constraints of physical resources or laboratory limitations?</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

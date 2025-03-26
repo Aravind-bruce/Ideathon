@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Domain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Overall Page Styling */
+        body {
+            background: linear-gradient(135deg, #f06, #3cf);  /* Background gradient */
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 40px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Full-Width Card Box */
+        .card {
+            width: 90%;               /* Card spans 90% of the width */
+            margin: 0 auto 30px;       /* Center the card and add bottom margin */
+            border-radius: 15px;       /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+            padding: 40px;             /* Padding on all four sides */
+            color: #333;               /* Text color inside the card */
+            font-size: 28px;           /* Reduced font size */
+            font-weight: 500;          /* Medium font weight */
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Gradient Colors for Each Card */
+        .card:nth-child(1) { background: linear-gradient(135deg, #8E2DE2, #4A00E0); }   /* Pink to Orange */
+        .card:nth-child(2) { background: linear-gradient(135deg, #56CCF2, #2F80ED); }   /* Sky Blue to Deep Blue */
+        .card:nth-child(3) { background: linear-gradient(135deg, #11998e, #38ef7d); }   /* Teal to Bright Green */
+        .card:nth-child(4) { background: linear-gradient(135deg, #8E2DE2, #4A00E0); }   /* Pink to Orange */
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .card {
+                font-size: 24px;    /* Smaller font size */
+                padding: 30px;      /* Less padding */
+            }
+            h1 {
+                font-size: 40px;    /* Smaller title */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                font-size: 20px;
+                padding: 25px;
+            }
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                font-size: 18px;    /* Even smaller font size */
+                padding: 20px;      /* Reduced padding */
+            }
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Title -->
+<h1>Space Tech</h1>
+
+<!-- Full-width Card Boxes with Padding -->
+<div class="card">Problem Statement 1: <br>Space exploration missions often face communication delays due to vast distances,
+    making it difficult to make real-time decisions. How can we develop an autonomous decision-
+    making system for space missions that can operate without waiting for communication from
+    Earth?</div>
+<div class="card">Problem Statement 2: <br>As space exploration advances, managing the increasing amount of space debris has
+    become a critical challenge. Space debris poses significant risks to satellites, spacecraft, and
+    the future of space missions, with current tracking and mitigation efforts often being
+    insufficient. How can we develop real-time solutions to track, manage, and remove space
+    debris to ensure the safety and sustainability of space exploration?</div>
+<div class="card">Problem Statement 3: <br>As space stations become crucial hubs for long-term space missions, ensuring the safety,
+    health, and efficiency of astronauts living in space is a growing challenge. Limited resources,
+    space, and communication delays make it difficult to manage life-support systems and daily
+    operations in real-time. How can we create innovative, real-time solutions to monitor and
+    optimize life support, health, and operations aboard space stations, ensuring astronauts'
+    safety and mission success?</div>
+    <div class="card">Problem Statement 4: <br>Design a fully autonomous greenhouse system capable of growing food in space, using
+        local resources such as lunar or Martian soil, water, and energy. The system should minimize
+        human intervention, maximize crop yield, and operate efficiently in space’s unique conditions,
+        including microgravity and radiation. How can we create a sustainable, high-yield food
+        production system for long-term space missions?</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
